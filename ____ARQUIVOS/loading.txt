@@ -1,0 +1,19 @@
+<div class="LoadingPage"></div>
+
+<style>
+.LoadingPage {
+   width: 88px;
+   height: 88px;
+   border-radius: 50%;
+   border: 14.1px solid;
+   border-color: #fcebeb;
+   border-right-color: #aa0000;
+   animation: LoadingPage_Animation 1.2s infinite linear;
+}
+
+@keyframes LoadingPage_Animation {
+   to {
+      transform: rotate(1turn);
+   }
+}
+</style>
