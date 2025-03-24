@@ -1,0 +1,23 @@
+/* Para telas com largura de 600px ou menos */
+@media screen and (max-width: 600px) {
+    
+    
+  }
+  
+  /* Para telas com largura de 900px ou menos */
+  @media screen and (max-width: 900px) {
+    
+
+  }
+  
+  /* Para telas com largura de 1024px ou menos */
+  @media screen and (max-width: 1024px) {
+    
+
+  }
+  
+  /* Para telas com largura de 1200px ou menos */
+  @media screen and (max-width: 1200px) {
+    
+    
+  }

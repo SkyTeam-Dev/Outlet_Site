@@ -1,0 +1,59 @@
+
+.full-height {
+    min-height: 100vh; /* Faz com que o container ocupe 100% da altura da tela */
+    display: flex;
+    align-items: start; /* Opcional: Centraliza o conteúdo verticalmente */
+    justify-content: center; /* Opcional: Centraliza o conteúdo horizontalmente */
+}
+
+.full-50-porcent {
+    min-height: 50vh; /* Faz com que o container ocupe 100% da altura da tela */
+    display: flex;
+    align-items: center; /* Opcional: Centraliza o conteúdo verticalmente */
+    justify-content: center; /* Opcional: Centraliza o conteúdo horizontalmente */
+}
+
+
+.full-25-porcent {
+    min-height: 25vh; /* Faz com que o container ocupe 100% da altura da tela */
+    display: flex;
+    align-items: center; /* Opcional: Centraliza o conteúdo verticalmente */
+    justify-content: center; /* Opcional: Centraliza o conteúdo horizontalmente */
+}
+
+.CentralizadorDeConteudo{
+    display: flex;
+    align-items: center; /* Opcional: Centraliza o conteúdo verticalmente */
+}
+
+.bg-gray-site{
+background-color: #171414;
+}
+
+
+.hero {
+    /* Substitua o caminho abaixo pela imagem que deseja usar */
+    background: url('../Imagens/Cabecalho_Background_LG.png') no-repeat center center; 
+    background-size: cover;
+    width: 100%;
+    height: 100vh; /* Ajuste conforme a altura desejada */
+    display: flex;
+    align-items: start;
+    color: #fff; /* Caso o texto seja claro sobre a imagem */
+  }
+
+  /* Ajustes de texto e espaçamento na área do Hero */
+  .hero-content {
+    max-width: 600px; /* Limita a largura do texto */
+  }
+
+  /* Espaçamento no título e no botão do Hero */
+  .hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }

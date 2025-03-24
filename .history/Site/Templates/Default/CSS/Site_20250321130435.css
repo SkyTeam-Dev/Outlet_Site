@@ -1,0 +1,248 @@
+.full-height {
+  min-height: 100vh; /* Faz com que o container ocupe 100% da altura da tela */
+  display: flex;
+  align-items: start; /* Opcional: Centraliza o conteúdo verticalmente */
+  justify-content: center; /* Opcional: Centraliza o conteúdo horizontalmente */
+}
+
+.full-50-porcent {
+  min-height: 50vh; /* Faz com que o container ocupe 100% da altura da tela */
+  display: flex;
+  align-items: center; /* Opcional: Centraliza o conteúdo verticalmente */
+  justify-content: center; /* Opcional: Centraliza o conteúdo horizontalmente */
+}
+
+.full-25-porcent {
+  min-height: 25vh; /* Faz com que o container ocupe 100% da altura da tela */
+  display: flex;
+  align-items: center; /* Opcional: Centraliza o conteúdo verticalmente */
+  justify-content: center; /* Opcional: Centraliza o conteúdo horizontalmente */
+}
+
+.CentralizadorDeConteudo {
+  align-items: center; /* Opcional: Centraliza o conteúdo verticalmente */
+  justify-content: center;
+}
+
+.bg-gray-site {
+  background-color: #171414;
+}
+
+.hero {
+  /* Substitua o caminho abaixo pela imagem que deseja usar */
+  background: url('../Imagens/Cabecalho_Background_LG.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  width: 100%;
+  height: 140vh; /* Ajuste conforme a altura desejada */
+  display: flex;
+
+  color: #fff; /* Caso o texto seja claro sobre a imagem */
+}
+
+/* Ajustes de texto e espaçamento na área do Hero */
+.hero-content {
+  max-width: 800px; /* Limita a largura do texto */
+  margin-top: 10em !important;
+}
+
+/* Espaçamento no título e no botão do Hero */
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-transparent {
+  color: #fff;
+}
+.btn-transparent:hover {
+  color: #f1f1f1;
+  font-weight: bold;
+}
+.btn-transparent:focus,
+.btn-transparent.focus {
+  box-shadow: 0 0 0 3px rgba(170, 0, 0, 0.8);
+}
+.btn-transparent.disabled,
+.btn-transparent:disabled {
+  background-color: #333333;
+  border-color: #333333;
+}
+
+/* Estilo base dos cards */
+.custom-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px; /* Cantos arredondados */
+  border: 1px solid transparent;
+  transition: border-color 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+}
+
+/* Imagem dentro do card */
+.custom-card img {
+  width: 100%;
+  height: auto; /* Mantém a proporção correta */
+  object-fit: cover;
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Camada escura para hover */
+.custom-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0); /* Inicialmente transparente */
+  transition: background 0.4s ease-in-out;
+}
+
+/* Texto dentro do card */
+.custom-card .card-text {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  z-index: 2;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito hover */
+.custom-card:hover {
+  border-color: #aa0000;
+  box-shadow: 0px 0px 15px rgba(170, 0, 0, 0.7);
+}
+
+.custom-card:hover::after {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Pequeno efeito de zoom na imagem */
+.custom-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Levanta o texto levemente no hover */
+.custom-card:hover .card-text {
+  transform: translateY(-5px);
+}
+
+
+.line-text-primary {
+  text-decoration: underline;
+  text-decoration-color: #aa0000; /* Cor do sublinhado */
+}
+
+.line-text-secondary {
+  text-decoration: underline;
+  text-decoration-color: #870000; /* Cor do sublinhado */
+}
+
+.line-text-size-1 {
+  text-decoration-thickness: 1px; /* Espessura do sublinhado */
+}
+
+.line-text-size-2 {
+  text-decoration-thickness: 2px; /* Espessura do sublinhado */
+}
+.line-text-size-3 {
+  text-decoration-thickness: 3px; /* Espessura do sublinhado */
+}
+
+.line-text-size-4 {
+  text-decoration-thickness: 4px; /* Espessura do sublinhado */
+}
+.line-text-size-5 {
+  text-decoration-thickness: 5px; /* Espessura do sublinhado */
+}
+
+
+
+.cadastro-section {
+  display: flex;
+  align-items: center;
+}
+
+.cadastro-texto {
+  color: white;
+  padding: 40px;
+  margin-left: 15%;
+}
+
+.cadastro-imagem {
+  position: relative;
+  overflow: hidden;
+}
+
+.cadastro-imagem img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efeito ao passar o mouse */
+.cadastro-imagem:hover img {
+  filter: brightness(70%); /* Deixa a imagem 30% mais escura */
+  box-shadow: 0px 0px 26px -12px #aa0000;/* Adiciona uma sombra ao redor */
+}
+
+
+.benefits-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 700px;
+  margin: auto;
+  padding: 6em;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Cada item de benefício */
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Ícones */
+.benefit-icon {
+  width: 80px;
+  height: 80px;
+}
+
+/* Texto */
+.benefit-text h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.benefit-text p {
+  font-size: 0.9rem;
+  margin: 5px 0 0;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .benefit-item {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .benefit-icon {
+      width: 40px;
+      height: 40px;
+  }
+}

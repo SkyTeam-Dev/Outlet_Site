@@ -1,0 +1,222 @@
+{
+    "sourceFile": "Site/Templates/Default/CSS/Responsive.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 51,
+            "patches": [
+                {
+                    "date": 1742825188057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742825257067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,28 @@\n /* Para telas com largura de 600px ou menos */\r\n @media screen and (max-width: 600px) {\r\n     \r\n-    \r\n+    .benefit-item {\r\n+        flex-direction: column;\r\n+        text-align: center;\r\n+      }\r\n+      .benefit-icon {\r\n+        width: 40px;\r\n+        height: 40px;\r\n+        margin-bottom: 2em;\r\n+      }\r\n+\r\n+      .cadastro-texto {\r\n+        margin-left: 1%;\r\n+      }\r\n   }\r\n   \r\n   /* Para telas com largura de 900px ou menos */\r\n   @media screen and (max-width: 900px) {\r\n     \r\n-\r\n+    .benefits-container {\r\n+        max-width: 100%;\r\n+      }\r\n   }\r\n   \r\n   /* Para telas com largura de 1024px ou menos */\r\n   @media screen and (max-width: 1024px) {\r\n@@ -18,6 +32,8 @@\n   \r\n   /* Para telas com largura de 1200px ou menos */\r\n   @media screen and (max-width: 1200px) {\r\n     \r\n-    \r\n+    .benefits-container {\r\n+        max-width: 90%;\r\n+      }\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742825277463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,13 @@\n \r\n       .cadastro-texto {\r\n         margin-left: 1%;\r\n       }\r\n+\r\n+      .cadastro-section {\r\n+        display: block;\r\n+        \r\n+      }\r\n   }\r\n   \r\n   /* Para telas com largura de 900px ou menos */\r\n   @media screen and (max-width: 900px) {\r\n"
+                },
+                {
+                    "date": 1742825409389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,22 +18,32 @@\n       .cadastro-section {\r\n         display: block;\r\n         \r\n       }\r\n+\r\n+      .hero {\r\n+        padding: 2em;\r\n+      }\r\n   }\r\n   \r\n   /* Para telas com largura de 900px ou menos */\r\n   @media screen and (max-width: 900px) {\r\n     \r\n     .benefits-container {\r\n         max-width: 100%;\r\n       }\r\n+\r\n+      .hero {\r\n+        padding: 80px;\r\n+      }\r\n   }\r\n   \r\n   /* Para telas com largura de 1024px ou menos */\r\n   @media screen and (max-width: 1024px) {\r\n     \r\n-\r\n+    .hero {\r\n+        padding: 60px;\r\n+      }\r\n   }\r\n   \r\n   /* Para telas com largura de 1200px ou menos */\r\n   @media screen and (max-width: 1200px) {\r\n"
+                },
+                {
+                    "date": 1742825512185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,8 @@\n+/* Para telas com largura de 400px ou menos */\r\n+@media screen and (max-width: 400px) {\r\n+}\r\n+\r\n /* Para telas com largura de 600px ou menos */\r\n @media screen and (max-width: 600px) {\r\n     \r\n     .benefit-item {\r\n"
+                },
+                {
+                    "date": 1742825578943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,10 @@\n /* Para telas com largura de 400px ou menos */\r\n @media screen and (max-width: 400px) {\r\n+    .benefits-container{\r\n+        width: 90%;\r\n+    }\r\n+\r\n }\r\n \r\n /* Para telas com largura de 600px ou menos */\r\n @media screen and (max-width: 600px) {\r\n@@ -14,8 +18,12 @@\n         height: 40px;\r\n         margin-bottom: 2em;\r\n       }\r\n \r\n+      .benefits-container{\r\n+        width: 90%;\r\n+    }\r\n+\r\n       .cadastro-texto {\r\n         margin-left: 1%;\r\n       }\r\n \r\n"
+                },
+                {
+                    "date": 1742825728436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,66 +1,60 @@\n /* Para telas com largura de 400px ou menos */\r\n @media screen and (max-width: 400px) {\r\n-    .benefits-container{\r\n-        width: 90%;\r\n-    }\r\n-\r\n+  .benefits-container {\r\n+    max-width: 90%;\r\n+  }\r\n }\r\n \r\n /* Para telas com largura de 600px ou menos */\r\n @media screen and (max-width: 600px) {\r\n-    \r\n-    .benefit-item {\r\n-        flex-direction: column;\r\n-        text-align: center;\r\n-      }\r\n-      .benefit-icon {\r\n-        width: 40px;\r\n-        height: 40px;\r\n-        margin-bottom: 2em;\r\n-      }\r\n+  .benefit-item {\r\n+    flex-direction: column;\r\n+    text-align: center;\r\n+  }\r\n+  .benefit-icon {\r\n+    max-width: 40px;\r\n+    height: 40px;\r\n+    margin-bottom: 2em;\r\n+  }\r\n \r\n-      .benefits-container{\r\n-        width: 90%;\r\n-    }\r\n+  .benefits-container {\r\n+    width: 90%;\r\n+  }\r\n \r\n-      .cadastro-texto {\r\n-        margin-left: 1%;\r\n-      }\r\n+  .cadastro-texto {\r\n+    margin-left: 1%;\r\n+  }\r\n \r\n-      .cadastro-section {\r\n-        display: block;\r\n-        \r\n-      }\r\n+  .cadastro-section {\r\n+    display: block;\r\n+  }\r\n \r\n-      .hero {\r\n-        padding: 2em;\r\n-      }\r\n+  .hero {\r\n+    padding: 2em;\r\n   }\r\n-  \r\n-  /* Para telas com largura de 900px ou menos */\r\n-  @media screen and (max-width: 900px) {\r\n-    \r\n-    .benefits-container {\r\n\\ No newline at end of file\n-        max-width: 100%;\r\n-      }\r\n+}\r\n \r\n-      .hero {\r\n-        padding: 80px;\r\n-      }\r\n+/* Para telas com largura de 900px ou menos */\r\n+@media screen and (max-width: 900px) {\r\n+  .benefits-container {\r\n+    max-width: 100%;\r\n   }\r\n-  \r\n-  /* Para telas com largura de 1024px ou menos */\r\n-  @media screen and (max-width: 1024px) {\r\n-    \r\n-    .hero {\r\n-        padding: 60px;\r\n-      }\r\n+\r\n+  .hero {\r\n+    padding: 80px;\r\n   }\r\n-  \r\n-  /* Para telas com largura de 1200px ou menos */\r\n-  @media screen and (max-width: 1200px) {\r\n-    \r\n-    .benefits-container {\r\n-        max-width: 90%;\r\n-      }\r\n-  }\n+}\r\n+\r\n+/* Para telas com largura de 1024px ou menos */\r\n+@media screen and (max-width: 1024px) {\r\n+  .hero {\r\n+    padding: 60px;\r\n+  }\r\n+}\r\n+\r\n+/* Para telas com largura de 1200px ou menos */\r\n+@media screen and (max-width: 1200px) {\r\n+  .benefits-container {\r\n+    max-width: 90%;\r\n+  }\r\n+}\r\n"
+                },
+                {
+                    "date": 1742825760592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,15 +11,15 @@\n     flex-direction: column;\r\n     text-align: center;\r\n   }\r\n   .benefit-icon {\r\n-    max-width: 40px;\r\n+    width: 40px;\r\n     height: 40px;\r\n     margin-bottom: 2em;\r\n   }\r\n \r\n   .benefits-container {\r\n-    width: 90%;\r\n+    max-width: 90%;\r\n   }\r\n \r\n   .cadastro-texto {\r\n     margin-left: 1%;\r\n"
+                },
+                {
+                    "date": 1742825914409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n /* Para telas com largura de 400px ou menos */\r\n @media screen and (max-width: 400px) {\r\n   .benefits-container {\r\n-    max-width: 90%;\r\n+    max-width: 95% !important;\r\n   }\r\n }\r\n \r\n /* Para telas com largura de 600px ou menos */\r\n@@ -17,9 +17,9 @@\n     margin-bottom: 2em;\r\n   }\r\n \r\n   .benefits-container {\r\n-    max-width: 90%;\r\n+    max-width: 90% !important;\r\n   }\r\n \r\n   .cadastro-texto {\r\n     margin-left: 1%;\r\n"
+                },
+                {
+                    "date": 1742825964091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n \r\n /* Para telas com largura de 900px ou menos */\r\n @media screen and (max-width: 900px) {\r\n   .benefits-container {\r\n-    max-width: 100%;\r\n+    max-width: 100% !important;\r\n   }\r\n \r\n   .hero {\r\n     padding: 80px;\r\n@@ -54,7 +54,7 @@\n \r\n /* Para telas com largura de 1200px ou menos */\r\n @media screen and (max-width: 1200px) {\r\n   .benefits-container {\r\n-    max-width: 90%;\r\n+    max-width: 70% !important;\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1742826140435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,8 +49,12 @@\n @media screen and (max-width: 1024px) {\r\n   .hero {\r\n     padding: 60px;\r\n   }\r\n+\r\n+  .benefits-container {\r\n+    max-width: 90% !important;\r\n+  }\r\n }\r\n \r\n /* Para telas com largura de 1200px ou menos */\r\n @media screen and (max-width: 1200px) {\r\n"
+                },
+                {
+                    "date": 1742826165088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,7 +58,7 @@\n \r\n /* Para telas com largura de 1200px ou menos */\r\n @media screen and (max-width: 1200px) {\r\n   .benefits-container {\r\n-    max-width: 70% !important;\r\n+    max-width: 80% !important;\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1742826308785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     margin-left: 1%;\r\n   }\r\n \r\n   .cadastro-section {\r\n-    display: block;\r\n+    display: block !important;\r\n   }\r\n \r\n   .hero {\r\n     padding: 2em;\r\n"
+                },
+                {
+                    "date": 1742826448903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n \r\n /* Para telas com largura de 1024px ou menos */\r\n @media screen and (max-width: 1024px) {\r\n   .hero {\r\n-    padding: 60px;\r\n+    padding: 2em;\r\n   }\r\n \r\n   .benefits-container {\r\n     max-width: 90% !important;\r\n"
+                },
+                {
+                    "date": 1742826532114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,8 +57,6 @@\n }\r\n \r\n /* Para telas com largura de 1200px ou menos */\r\n @media screen and (max-width: 1200px) {\r\n-  .benefits-container {\r\n-    max-width: 80% !important;\r\n-  }\r\n+  \r\n }\r\n"
+                },
+                {
+                    "date": 1742826553535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n     padding: 2em;\r\n   }\r\n \r\n   .benefits-container {\r\n-    max-width: 90% !important;\r\n+    max-width: 98% !important;\r\n   }\r\n }\r\n \r\n /* Para telas com largura de 1200px ou menos */\r\n"
+                },
+                {
+                    "date": 1742826766686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     max-width: 90% !important;\r\n   }\r\n \r\n   .cadastro-texto {\r\n-    margin-left: 1%;\r\n+    margin-left: 0% !important;\r\n   }\r\n \r\n   .cadastro-section {\r\n     display: block !important;\r\n"
+                },
+                {
+                    "date": 1742828327624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,9 @@\n+/* Para telas com altura de 1081px ou mais */\r\n+@media screen and (min-height: 1081px) {\r\n+    \r\n+  }\r\n+\r\n /* Para telas com largura de 400px ou menos */\r\n @media screen and (max-width: 400px) {\r\n   .benefits-container {\r\n     max-width: 95% !important;\r\n"
+                },
+                {
+                    "date": 1742828408135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n /* Para telas com altura de 1081px ou mais */\r\n @media screen and (min-height: 1081px) {\r\n-    \r\n+    .hero {\r\n+        height: 30vh !important;\r\n+    }\r\n   }\r\n \r\n /* Para telas com largura de 400px ou menos */\r\n @media screen and (max-width: 400px) {\r\n"
+                },
+                {
+                    "date": 1742828519449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n /* Para telas com altura de 1081px ou mais */\r\n @media screen and (min-height: 1081px) {\r\n     .hero {\r\n-        height: 30vh !important;\r\n+        height: 55vh !important;\r\n     }\r\n   }\r\n \r\n /* Para telas com largura de 400px ou menos */\r\n"
+                },
+                {
+                    "date": 1742838456837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,12 @@\n     height: 40px;\r\n     margin-bottom: 2em;\r\n   }\r\n \r\n+  .MarginLeft{\r\n+    margin-left: 0rem !important;\r\n+  }\r\n+\r\n   .benefits-container {\r\n     max-width: 90% !important;\r\n   }\r\n \r\n"
+                },
+                {
+                    "date": 1742838491076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n   }\r\n \r\n   .MarginLeft{\r\n     margin-left: 0rem !important;\r\n+    text-align: center;\r\n   }\r\n \r\n   .benefits-container {\r\n     max-width: 90% !important;\r\n"
+                },
+                {
+                    "date": 1742838523893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n \r\n   .MarginLeft{\r\n     margin-left: 0rem !important;\r\n     text-align: center;\r\n+    margin: 0 auto;\r\n   }\r\n \r\n   .benefits-container {\r\n     max-width: 90% !important;\r\n"
+                },
+                {
+                    "date": 1742838537641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,10 +25,10 @@\n   }\r\n \r\n   .MarginLeft{\r\n     margin-left: 0rem !important;\r\n-    text-align: center;\r\n-    margin: 0 auto;\r\n+    text-align: center !important;\r\n+    margin: 0 auto !important;\r\n   }\r\n \r\n   .benefits-container {\r\n     max-width: 90% !important;\r\n"
+                },
+                {
+                    "date": 1742838566657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \r\n   .MarginLeft{\r\n     margin-left: 0rem !important;\r\n     text-align: center !important;\r\n-    margin: 0 auto !important;\r\n+    margin: 1em auto !important;\r\n   }\r\n \r\n   .benefits-container {\r\n     max-width: 90% !important;\r\n"
+                },
+                {
+                    "date": 1742838706349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n /* Para telas com altura de 1081px ou mais */\r\n @media screen and (min-height: 1081px) {\r\n-    .hero {\r\n-        height: 55vh !important;\r\n-    }\r\n+  .hero {\r\n+    height: 55vh !important;\r\n   }\r\n+}\r\n \r\n /* Para telas com largura de 400px ou menos */\r\n @media screen and (max-width: 400px) {\r\n   .benefits-container {\r\n@@ -23,9 +23,14 @@\n     height: 40px;\r\n     margin-bottom: 2em;\r\n   }\r\n \r\n-  .MarginLeft{\r\n+  .LoadingPage {\r\n+    top: 35% !important;\r\n+    left: 40% !important;\r\n+  }\r\n+\r\n+  .MarginLeft {\r\n     margin-left: 0rem !important;\r\n     text-align: center !important;\r\n     margin: 1em auto !important;\r\n   }\r\n@@ -70,6 +75,5 @@\n }\r\n \r\n /* Para telas com largura de 1200px ou menos */\r\n @media screen and (max-width: 1200px) {\r\n-  \r\n }\r\n"
+                },
+                {
+                    "date": 1742838780096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,8 +68,12 @@\n   .hero {\r\n     padding: 2em;\r\n   }\r\n \r\n+  .LoadingPage {\r\n+    top: 45% !important;\r\n+  }\r\n+\r\n   .benefits-container {\r\n     max-width: 98% !important;\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1742838795474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,9 @@\n     padding: 2em;\r\n   }\r\n \r\n   .LoadingPage {\r\n-    top: 45% !important;\r\n+    top: 40% !important;\r\n   }\r\n \r\n   .benefits-container {\r\n     max-width: 98% !important;\r\n"
+                },
+                {
+                    "date": 1742838862493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,8 +70,9 @@\n   }\r\n \r\n   .LoadingPage {\r\n     top: 40% !important;\r\n+    left: 45% !important;\r\n   }\r\n \r\n   .benefits-container {\r\n     max-width: 98% !important;\r\n"
+                },
+                {
+                    "date": 1742838942074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,12 @@\n @media screen and (max-width: 400px) {\r\n   .benefits-container {\r\n     max-width: 95% !important;\r\n   }\r\n+\r\n+  .LoadingPage {\r\n+    left: 38% !important;\r\n+  }\r\n }\r\n \r\n /* Para telas com largura de 600px ou menos */\r\n @media screen and (max-width: 600px) {\r\n"
+                },
+                {
+                    "date": 1742838970889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,9 +67,9 @@\n   }\r\n }\r\n \r\n /* Para telas com largura de 1024px ou menos */\r\n-@media screen and (max-width: 1024px) {\r\n+@media screen and (width: 1024px) {\r\n   .hero {\r\n     padding: 2em;\r\n   }\r\n \r\n"
+                },
+                {
+                    "date": 1742838997116,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,8 +64,13 @@\n \r\n   .hero {\r\n     padding: 80px;\r\n   }\r\n+\r\n+  .LoadingPage {\r\n+    top: 40% !important;\r\n+    left: 45% !important;\r\n+  }\r\n }\r\n \r\n /* Para telas com largura de 1024px ou menos */\r\n @media screen and (width: 1024px) {\r\n"
+                },
+                {
+                    "date": 1742839087325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,5 +89,9 @@\n }\r\n \r\n /* Para telas com largura de 1200px ou menos */\r\n @media screen and (max-width: 1200px) {\r\n+    .LoadingPage {\r\n+        top: 35% !important;\r\n+        left: 40% !important;\r\n+      }\r\n }\r\n"
+                },
+                {
+                    "date": 1742839116355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,7 +91,7 @@\n /* Para telas com largura de 1200px ou menos */\r\n @media screen and (max-width: 1200px) {\r\n     .LoadingPage {\r\n         top: 35% !important;\r\n-        left: 40% !important;\r\n+        left: 48% !important;\r\n       }\r\n }\r\n"
+                },
+                {
+                    "date": 1742839344428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,8 +90,8 @@\n \r\n /* Para telas com largura de 1200px ou menos */\r\n @media screen and (max-width: 1200px) {\r\n     .LoadingPage {\r\n-        top: 35% !important;\r\n-        left: 48% !important;\r\n+        left: 25em !important;\r\n+\r\n       }\r\n }\r\n"
+                },
+                {
+                    "date": 1742839377954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,9 +88,9 @@\n   }\r\n }\r\n \r\n /* Para telas com largura de 1200px ou menos */\r\n-@media screen and (max-width: 1200px) {\r\n+@media screen and (max-width: 1300px) {\r\n     .LoadingPage {\r\n         left: 25em !important;\r\n \r\n       }\r\n"
+                },
+                {
+                    "date": 1742839408976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,8 +90,8 @@\n \r\n /* Para telas com largura de 1200px ou menos */\r\n @media screen and (max-width: 1300px) {\r\n     .LoadingPage {\r\n-        left: 25em !important;\r\n+        left: 36em !important;\r\n \r\n       }\r\n }\r\n"
+                },
+                {
+                    "date": 1742839509580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,4 +94,12 @@\n         left: 36em !important;\r\n \r\n       }\r\n }\r\n+\r\n+@media screen and (max-width: 1400px) {\r\n+    .LoadingPage {\r\n+        top: 15em !important;\r\n+        left: 36em !important;\r\n+\r\n+      }\r\n+}\r\n"
+                },
+                {
+                    "date": 1742839530862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,8 +98,8 @@\n \r\n @media screen and (max-width: 1400px) {\r\n     .LoadingPage {\r\n         top: 15em !important;\r\n-        left: 36em !important;\r\n+        left: 38em !important;\r\n \r\n       }\r\n }\r\n"
+                },
+                {
+                    "date": 1742839595010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -102,4 +102,12 @@\n         left: 38em !important;\r\n \r\n       }\r\n }\r\n+\r\n+@media screen and (max-width: 1700px) {\r\n+    .LoadingPage {\r\n+        top: 25em !important;\r\n+        left: 49em !important;\r\n+\r\n+      }\r\n+}\r\n"
+                },
+                {
+                    "date": 1742839689212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,24 +88,24 @@\n   }\r\n }\r\n \r\n /* Para telas com largura de 1200px ou menos */\r\n-@media screen and (max-width: 1300px) {\r\n+@media screen and (width: 1300px) {\r\n     .LoadingPage {\r\n         left: 36em !important;\r\n \r\n       }\r\n }\r\n \r\n-@media screen and (max-width: 1400px) {\r\n+@media screen and (width: 1400px) {\r\n     .LoadingPage {\r\n         top: 15em !important;\r\n         left: 38em !important;\r\n \r\n       }\r\n }\r\n \r\n-@media screen and (max-width: 1700px) {\r\n+@media screen and (width: 1700px) {\r\n     .LoadingPage {\r\n         top: 25em !important;\r\n         left: 49em !important;\r\n \r\n"
+                },
+                {
+                    "date": 1742839771334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,13 @@\n @media screen and (min-height: 1081px) {\r\n   .hero {\r\n     height: 55vh !important;\r\n   }\r\n+\r\n+  .LoadingPage {\r\n+    left: 30em !important;\r\n+\r\n+  }\r\n }\r\n \r\n /* Para telas com largura de 400px ou menos */\r\n @media screen and (max-width: 400px) {\r\n"
+                },
+                {
+                    "date": 1742839883822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n /* Para telas com altura de 1081px ou mais */\r\n-@media screen and (min-height: 1081px) {\r\n+@media screen and (height: 1081px) {\r\n   .hero {\r\n     height: 55vh !important;\r\n   }\r\n \r\n@@ -10,9 +10,9 @@\n   }\r\n }\r\n \r\n /* Para telas com largura de 400px ou menos */\r\n-@media screen and (max-width: 400px) {\r\n+@media screen and (width: 400px) {\r\n   .benefits-container {\r\n     max-width: 95% !important;\r\n   }\r\n \r\n@@ -21,9 +21,9 @@\n   }\r\n }\r\n \r\n /* Para telas com largura de 600px ou menos */\r\n-@media screen and (max-width: 600px) {\r\n+@media screen and (width: 600px) {\r\n   .benefit-item {\r\n     flex-direction: column;\r\n     text-align: center;\r\n   }\r\n@@ -61,9 +61,9 @@\n   }\r\n }\r\n \r\n /* Para telas com largura de 900px ou menos */\r\n-@media screen and (max-width: 900px) {\r\n+@media screen and (width: 900px) {\r\n   .benefits-container {\r\n     max-width: 100% !important;\r\n   }\r\n \r\n"
+                },
+                {
+                    "date": 1742839934880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,12 @@\n \r\n   .LoadingPage {\r\n     left: 38% !important;\r\n   }\r\n+\r\n+  .hero {\r\n+    padding: 2em;\r\n+  }\r\n }\r\n \r\n /* Para telas com largura de 600px ou menos */\r\n @media screen and (width: 600px) {\r\n"
+                },
+                {
+                    "date": 1742839952620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   }\r\n }\r\n \r\n /* Para telas com largura de 400px ou menos */\r\n-@media screen and (width: 400px) {\r\n+@media screen and (min-width: 400px) {\r\n   .benefits-container {\r\n     max-width: 95% !important;\r\n   }\r\n \r\n@@ -20,9 +20,9 @@\n     left: 38% !important;\r\n   }\r\n \r\n   .hero {\r\n-    padding: 2em;\r\n+    padding: 3em;\r\n   }\r\n }\r\n \r\n /* Para telas com largura de 600px ou menos */\r\n"
+                },
+                {
+                    "date": 1742839973593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   }\r\n }\r\n \r\n /* Para telas com largura de 600px ou menos */\r\n-@media screen and (width: 600px) {\r\n+@media screen and (min-width: 600px) {\r\n   .benefit-item {\r\n     flex-direction: column;\r\n     text-align: center;\r\n   }\r\n"
+                },
+                {
+                    "date": 1742840108302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,122 +1,122 @@\n /* Para telas com altura de 1081px ou mais */\r\n-@media screen and (height: 1081px) {\r\n-  .hero {\r\n-    height: 55vh !important;\r\n+@media screen and (min-height: 1081px) {\r\n+    .hero {\r\n+      height: 55vh !important;\r\n+    }\r\n+  \r\n+    .LoadingPage {\r\n+      left: 30em !important;\r\n+    }\r\n   }\r\n-\r\n-  .LoadingPage {\r\n-    left: 30em !important;\r\n-\r\n+  \r\n+  /* Para telas com largura de 400px ou menos */\r\n+  @media screen and (max-width: 400px) {\r\n+    .benefits-container {\r\n+      max-width: 95% !important;\r\n+    }\r\n+  \r\n+    .LoadingPage {\r\n+      left: 38% !important;\r\n+    }\r\n+  \r\n+    .hero {\r\n+      padding: 3em;\r\n+    }\r\n   }\r\n-}\r\n-\r\n-/* Para telas com largura de 400px ou menos */\r\n-@media screen and (min-width: 400px) {\r\n-  .benefits-container {\r\n-    max-width: 95% !important;\r\n+  \r\n+  /* Para telas com largura de 600px ou menos */\r\n+  @media screen and (max-width: 600px) {\r\n+    .benefit-item {\r\n+      flex-direction: column;\r\n+      text-align: center;\r\n+    }\r\n+  \r\n+    .benefit-icon {\r\n+      width: 40px;\r\n+      height: 40px;\r\n+      margin-bottom: 2em;\r\n+    }\r\n+  \r\n+    .LoadingPage {\r\n+      top: 35% !important;\r\n+      left: 40% !important;\r\n+    }\r\n+  \r\n+    .MarginLeft {\r\n+      margin-left: 0 !important;\r\n+      text-align: center !important;\r\n+      margin: 1em auto !important;\r\n+    }\r\n+  \r\n+    .benefits-container {\r\n+      max-width: 90% !important;\r\n+    }\r\n+  \r\n+    .cadastro-texto {\r\n+      margin-left: 0 !important;\r\n+    }\r\n+  \r\n+    .cadastro-section {\r\n+      display: block !important;\r\n+    }\r\n+  \r\n+    .hero {\r\n+      padding: 2em;\r\n+    }\r\n   }\r\n-\r\n-  .LoadingPage {\r\n-    left: 38% !important;\r\n+  \r\n+  /* Para telas com largura de 900px ou menos */\r\n+  @media screen and (max-width: 900px) {\r\n+    .benefits-container {\r\n+      max-width: 100% !important;\r\n+    }\r\n+  \r\n+    .hero {\r\n+      padding: 80px;\r\n+    }\r\n+  \r\n+    .LoadingPage {\r\n+      top: 40% !important;\r\n+      left: 45% !important;\r\n+    }\r\n   }\r\n-\r\n-  .hero {\r\n-    padding: 3em;\r\n+  \r\n+  /* Para telas com largura de 1024px ou menos */\r\n+  @media screen and (max-width: 1024px) {\r\n+    .hero {\r\n+      padding: 2em;\r\n+    }\r\n+  \r\n+    .LoadingPage {\r\n+      top: 40% !important;\r\n+      left: 45% !important;\r\n+    }\r\n+  \r\n+    .benefits-container {\r\n+      max-width: 98% !important;\r\n+    }\r\n   }\r\n-}\r\n-\r\n-/* Para telas com largura de 600px ou menos */\r\n-@media screen and (min-width: 600px) {\r\n-  .benefit-item {\r\n-    flex-direction: column;\r\n-    text-align: center;\r\n+  \r\n+  /* Para telas com largura de 1300px ou menos */\r\n+  @media screen and (max-width: 1300px) {\r\n+    .LoadingPage {\r\n+      left: 36em !important;\r\n+    }\r\n   }\r\n-  .benefit-icon {\r\n-    width: 40px;\r\n-    height: 40px;\r\n-    margin-bottom: 2em;\r\n+  \r\n+  /* Para telas com largura de 1400px ou menos */\r\n+  @media screen and (max-width: 1400px) {\r\n+    .LoadingPage {\r\n+      top: 15em !important;\r\n+      left: 38em !important;\r\n+    }\r\n   }\r\n-\r\n-  .LoadingPage {\r\n-    top: 35% !important;\r\n-    left: 40% !important;\r\n+  \r\n+  /* Para telas com largura de 1700px ou menos */\r\n+  @media screen and (max-width: 1700px) {\r\n+    .LoadingPage {\r\n+      top: 25em !important;\r\n+      left: 49em !important;\r\n+    }\r\n   }\r\n-\r\n-  .MarginLeft {\r\n-    margin-left: 0rem !important;\r\n-    text-align: center !important;\r\n-    margin: 1em auto !important;\r\n-  }\r\n-\r\n-  .benefits-container {\r\n-    max-width: 90% !important;\r\n-  }\r\n-\r\n-  .cadastro-texto {\r\n-    margin-left: 0% !important;\r\n-  }\r\n-\r\n-  .cadastro-section {\r\n-    display: block !important;\r\n-  }\r\n-\r\n-  .hero {\r\n-    padding: 2em;\r\n-  }\r\n-}\r\n-\r\n-/* Para telas com largura de 900px ou menos */\r\n-@media screen and (width: 900px) {\r\n-  .benefits-container {\r\n-    max-width: 100% !important;\r\n-  }\r\n-\r\n-  .hero {\r\n-    padding: 80px;\r\n-  }\r\n-\r\n-  .LoadingPage {\r\n-    top: 40% !important;\r\n-    left: 45% !important;\r\n-  }\r\n-}\r\n-\r\n-/* Para telas com largura de 1024px ou menos */\r\n-@media screen and (width: 1024px) {\r\n-  .hero {\r\n-    padding: 2em;\r\n-  }\r\n-\r\n-  .LoadingPage {\r\n-    top: 40% !important;\r\n-    left: 45% !important;\r\n-  }\r\n-\r\n-  .benefits-container {\r\n-    max-width: 98% !important;\r\n-  }\r\n-}\r\n-\r\n-/* Para telas com largura de 1200px ou menos */\r\n-@media screen and (width: 1300px) {\r\n-    .LoadingPage {\r\n-        left: 36em !important;\r\n-\r\n-      }\r\n-}\r\n-\r\n-@media screen and (width: 1400px) {\r\n-    .LoadingPage {\r\n-        top: 15em !important;\r\n-        left: 38em !important;\r\n-\r\n-      }\r\n-}\r\n-\r\n-@media screen and (width: 1700px) {\r\n-    .LoadingPage {\r\n-        top: 25em !important;\r\n-        left: 49em !important;\r\n-\r\n-      }\r\n-}\r\n+  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742840161640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n   \r\n     .MarginLeft {\r\n       margin-left: 0 !important;\r\n       text-align: center !important;\r\n-      margin: 1em auto !important;\r\n+      margin: 0.2em auto !important;\r\n     }\r\n   \r\n     .benefits-container {\r\n       max-width: 90% !important;\r\n"
+                },
+                {
+                    "date": 1742840441687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,10 @@\n       max-width: 95% !important;\r\n     }\r\n   \r\n     .LoadingPage {\r\n-      left: 38% !important;\r\n+        top: 14em !important;\r\n+        left: 7em !important;\r\n     }\r\n   \r\n     .hero {\r\n       padding: 3em;\r\n"
+                },
+                {
+                    "date": 1742840602404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -115,9 +115,9 @@\n   \r\n   /* Para telas com largura de 1700px ou menos */\r\n   @media screen and (max-width: 1700px) {\r\n     .LoadingPage {\r\n-      top: 25em !important;\r\n-      left: 49em !important;\r\n+        top: 15em !important;\r\n+        left: 7em !important;\r\n     }\r\n   }\r\n   \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742840659179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -115,9 +115,9 @@\n   \r\n   /* Para telas com largura de 1700px ou menos */\r\n   @media screen and (max-width: 1700px) {\r\n     .LoadingPage {\r\n-        top: 15em !important;\r\n-        left: 7em !important;\r\n+        top: 10% !important;\r\n+        left: 50% !important;\r\n     }\r\n   }\r\n   \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742841963389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,24 +3,16 @@\n     .hero {\r\n       height: 55vh !important;\r\n     }\r\n   \r\n-    .LoadingPage {\r\n-      left: 30em !important;\r\n-    }\r\n   }\r\n   \r\n   /* Para telas com largura de 400px ou menos */\r\n   @media screen and (max-width: 400px) {\r\n     .benefits-container {\r\n       max-width: 95% !important;\r\n     }\r\n-  \r\n-    .LoadingPage {\r\n-        top: 14em !important;\r\n-        left: 7em !important;\r\n-    }\r\n-  \r\n+     \r\n     .hero {\r\n       padding: 3em;\r\n     }\r\n   }\r\n@@ -37,14 +29,9 @@\n       height: 40px;\r\n       margin-bottom: 2em;\r\n     }\r\n   \r\n-    .LoadingPage {\r\n-      top: 35% !important;\r\n-      left: 40% !important;\r\n-    }\r\n-  \r\n-    .MarginLeft {\r\n+   .MarginLeft {\r\n       margin-left: 0 !important;\r\n       text-align: center !important;\r\n       margin: 0.2em auto !important;\r\n     }\r\n@@ -75,49 +62,35 @@\n     .hero {\r\n       padding: 80px;\r\n     }\r\n   \r\n-    .LoadingPage {\r\n-      top: 40% !important;\r\n-      left: 45% !important;\r\n-    }\r\n+    \r\n   }\r\n   \r\n   /* Para telas com largura de 1024px ou menos */\r\n   @media screen and (max-width: 1024px) {\r\n     .hero {\r\n       padding: 2em;\r\n     }\r\n   \r\n-    .LoadingPage {\r\n-      top: 40% !important;\r\n-      left: 45% !important;\r\n-    }\r\n+    \r\n   \r\n     .benefits-container {\r\n       max-width: 98% !important;\r\n     }\r\n   }\r\n   \r\n   /* Para telas com largura de 1300px ou menos */\r\n   @media screen and (max-width: 1300px) {\r\n-    .LoadingPage {\r\n-      left: 36em !important;\r\n-    }\r\n+    \r\n   }\r\n   \r\n   /* Para telas com largura de 1400px ou menos */\r\n   @media screen and (max-width: 1400px) {\r\n-    .LoadingPage {\r\n-      top: 15em !important;\r\n-      left: 38em !important;\r\n-    }\r\n+    \r\n   }\r\n   \r\n   /* Para telas com largura de 1700px ou menos */\r\n   @media screen and (max-width: 1700px) {\r\n-    .LoadingPage {\r\n-        top: 10% !important;\r\n-        left: 50% !important;\r\n-    }\r\n+    .\r\n   }\r\n   \n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1742825188057,
+            "name": "Commit-0",
+            "content": "/* Para telas com largura de 600px ou menos */\r\n@media screen and (max-width: 600px) {\r\n    \r\n    \r\n  }\r\n  \r\n  /* Para telas com largura de 900px ou menos */\r\n  @media screen and (max-width: 900px) {\r\n    \r\n\r\n  }\r\n  \r\n  /* Para telas com largura de 1024px ou menos */\r\n  @media screen and (max-width: 1024px) {\r\n    \r\n\r\n  }\r\n  \r\n  /* Para telas com largura de 1200px ou menos */\r\n  @media screen and (max-width: 1200px) {\r\n    \r\n    \r\n  }"
+        }
+    ]
+}

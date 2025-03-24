@@ -1,0 +1,6 @@
+.full-height {
+    min-height: 100vh; /* Faz com que o container ocupe 100% da altura da tela */
+    display: flex;
+    align-items: center; /* Opcional: Centraliza o conteúdo verticalmente */
+    justify-content: center; /* Opcional: Centraliza o conteúdo horizontalmente */
+}

@@ -1,0 +1,122 @@
+/* Para telas com altura de 1081px ou mais */
+@media screen and (min-height: 1081px) {
+    .hero {
+      height: 55vh !important;
+    }
+  
+    .LoadingPage {
+      left: 30em !important;
+    }
+  }
+  
+  /* Para telas com largura de 400px ou menos */
+  @media screen and (max-width: 400px) {
+    .benefits-container {
+      max-width: 95% !important;
+    }
+  
+    .LoadingPage {
+      left: 38% !important;
+    }
+  
+    .hero {
+      padding: 3em;
+    }
+  }
+  
+  /* Para telas com largura de 600px ou menos */
+  @media screen and (max-width: 600px) {
+    .benefit-item {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .benefit-icon {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 2em;
+    }
+  
+    .LoadingPage {
+      top: 35% !important;
+      left: 40% !important;
+    }
+  
+    .MarginLeft {
+      margin-left: 0 !important;
+      text-align: center !important;
+      margin: 0.2em auto !important;
+    }
+  
+    .benefits-container {
+      max-width: 90% !important;
+    }
+  
+    .cadastro-texto {
+      margin-left: 0 !important;
+    }
+  
+    .cadastro-section {
+      display: block !important;
+    }
+  
+    .hero {
+      padding: 2em;
+    }
+  }
+  
+  /* Para telas com largura de 900px ou menos */
+  @media screen and (max-width: 900px) {
+    .benefits-container {
+      max-width: 100% !important;
+    }
+  
+    .hero {
+      padding: 80px;
+    }
+  
+    .LoadingPage {
+      top: 40% !important;
+      left: 45% !important;
+    }
+  }
+  
+  /* Para telas com largura de 1024px ou menos */
+  @media screen and (max-width: 1024px) {
+    .hero {
+      padding: 2em;
+    }
+  
+    .LoadingPage {
+      top: 40% !important;
+      left: 45% !important;
+    }
+  
+    .benefits-container {
+      max-width: 98% !important;
+    }
+  }
+  
+  /* Para telas com largura de 1300px ou menos */
+  @media screen and (max-width: 1300px) {
+    .LoadingPage {
+      left: 36em !important;
+    }
+  }
+  
+  /* Para telas com largura de 1400px ou menos */
+  @media screen and (max-width: 1400px) {
+    .LoadingPage {
+      top: 15em !important;
+      left: 38em !important;
+    }
+  }
+  
+  /* Para telas com largura de 1700px ou menos */
+  @media screen and (max-width: 1700px) {
+    .LoadingPage {
+      top: 25em !important;
+      left: 49em !important;
+    }
+  }
+  

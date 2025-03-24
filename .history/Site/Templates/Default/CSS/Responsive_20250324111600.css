@@ -1,0 +1,60 @@
+/* Para telas com largura de 400px ou menos */
+@media screen and (max-width: 400px) {
+  .benefits-container {
+    max-width: 90%;
+  }
+}
+
+/* Para telas com largura de 600px ou menos */
+@media screen and (max-width: 600px) {
+  .benefit-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .benefit-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 2em;
+  }
+
+  .benefits-container {
+    max-width: 90%;
+  }
+
+  .cadastro-texto {
+    margin-left: 1%;
+  }
+
+  .cadastro-section {
+    display: block;
+  }
+
+  .hero {
+    padding: 2em;
+  }
+}
+
+/* Para telas com largura de 900px ou menos */
+@media screen and (max-width: 900px) {
+  .benefits-container {
+    max-width: 100%;
+  }
+
+  .hero {
+    padding: 80px;
+  }
+}
+
+/* Para telas com largura de 1024px ou menos */
+@media screen and (max-width: 1024px) {
+  .hero {
+    padding: 60px;
+  }
+}
+
+/* Para telas com largura de 1200px ou menos */
+@media screen and (max-width: 1200px) {
+  .benefits-container {
+    max-width: 90%;
+  }
+}
