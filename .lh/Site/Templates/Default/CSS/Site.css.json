@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 109,
+            "activePatchIndex": 113,
             "patches": [
                 {
                     "date": 1742480879007,
@@ -444,6 +444,22 @@
                 {
                     "date": 1742841818790,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n /* RESPONSIVE */\r\n @import url('Responsive.css');\r\n \r\n .LoadingPage {\r\n-  width: 8.333333%;\r\n+  width: 100%;\r\n   height: 42.2px;\r\n   background: radial-gradient(circle closest-side, #aa0000 90%, #0000) 0% 50%,\r\n     radial-gradient(circle closest-side, #aa0000 90%, #0000) 50% 50%,\r\n     radial-gradient(circle closest-side, #aa0000 90%, #0000) 100% 50%;\r\n"
+                },
+                {
+                    "date": 1742852818445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -157,8 +157,9 @@\n }\r\n \r\n /* Linhas sublinhadas */\r\n .line-text-primary {\r\n+  text-decoration: underline;\r\n   text-decoration-color: #aa0000;\r\n }\r\n .line-text-secondary {\r\n   text-decoration-color: #870000;\r\n"
+                },
+                {
+                    "date": 1742852824598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -161,8 +161,9 @@\n   text-decoration: underline;\r\n   text-decoration-color: #aa0000;\r\n }\r\n .line-text-secondary {\r\n+  text-decoration: underline;\r\n   text-decoration-color: #870000;\r\n }\r\n .line-text-size-1 {\r\n   text-decoration-thickness: 1px;\r\n"
+                },
+                {
+                    "date": 1742921386792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -275,4 +275,10 @@\n \r\n .MarginLeft {\r\n   margin-left: 5rem;\r\n }\r\n+\r\n+\r\n+\r\n+a.bg-primary:hover, a.bg-primary:focus, button.bg-primary:hover, button.bg-primary:focus {\r\n+  background-color: #460000; !important;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742921442867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -279,6 +279,7 @@\n \r\n \r\n \r\n a.bg-primary:hover, a.bg-primary:focus, button.bg-primary:hover, button.bg-primary:focus {\r\n-  background-color: #460000; !important;\r\n-}\n\\ No newline at end of file\n+  background-color: #460000 !important;\r\n+}\r\n+\r\n"
                 }
             ],
             "date": 1742480879007,

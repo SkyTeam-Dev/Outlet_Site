@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 13,
             "patches": [
                 {
                     "date": 1742486217998,
@@ -16,6 +16,50 @@
                 {
                     "date": 1742504684922,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,10 @@\n  */\n  \n  \n @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');\n+\n+@import url('../WebFonts/WebFont.css');\n  \n /* ===== Scrollbar ===== */\n   /* Firefox */\n   * {\n@@ -125,9 +127,9 @@\n     display: block;\n }\n body {\n     margin: 0;\n-    font-family: \"Roboto Flex\", sans-serif;\n+    font-family: \"Cairo\", sans-serif;\n     font-size: 1rem;\n     font-weight: normal;\n     line-height: 1.5;\n     color: #212529;\n@@ -4032,9 +4034,9 @@\n     position: absolute;\n     z-index: 1070;\n     display: block;\n     margin: 0;\n-    font-family: \"Roboto Flex\", sans-serif;\n+    font-family: \"Cairo\", sans-serif;\n     font-style: normal;\n     font-weight: normal;\n     line-height: 1.5;\n     text-align: left;\n@@ -4141,9 +4143,9 @@\n     z-index: 1060;\n     display: block;\n     max-width: 276px;\n     padding: 1px;\n-    font-family: \"Roboto Flex\", sans-serif;\n+    font-family: \"Cairo\", sans-serif;\n     font-style: normal;\n     font-weight: normal;\n     line-height: 1.5;\n     text-align: left;\n"
+                },
+                {
+                    "date": 1742939566258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1379,10 +1379,13 @@\n }\n .form-control:focus {\n     color: #495057;\n     background-color: #fff;\n-    border-color: #ff2b2b;\n+    border-color: #aa0000;\n     outline: none;\n+    outline: 0;\n+    box-shadow: 0 0 0 0.2rem rgba(170,0,0, 0.25);\n+    \n }\n .form-control::placeholder {\n     color: #868e96;\n     opacity: 1;\n@@ -3121,12 +3124,12 @@\n     color: white;\n }\n .navbar-dark .navbar-brand:focus,\n .navbar-dark .navbar-brand:hover {\n-    color: white;\n+    color: rgba(255, 255, 255, 0.75);\n }\n .navbar-dark .navbar-nav .nav-link {\n-    color: rgba(255, 255, 255, 0.5);\n+    color: white;\n }\n .navbar-dark .navbar-nav .nav-link:focus,\n .navbar-dark .navbar-nav .nav-link:hover {\n     color: rgba(255, 255, 255, 0.75);\n@@ -3140,9 +3143,9 @@\n .navbar-dark .navbar-nav .nav-link.active {\n     color: white;\n }\n .navbar-dark .navbar-toggler {\n-    color: rgba(255, 255, 255, 0.5);\n+    color: white;\n     border-color: rgba(255, 255, 255, 0.1);\n }\n .navbar-dark .navbar-toggler-icon {\n     background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E\");\n"
+                },
+                {
+                    "date": 1742939691682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1376,8 +1376,14 @@\n .form-control::-ms-expand {\n     background-color: transparent;\n     border: 0;\n }\n+\n+.form-control:hover{\n+    border-color: #aa0000;\n+    outline: none;\n+    outline: 0;\n+}\n .form-control:focus {\n     color: #495057;\n     background-color: #fff;\n     border-color: #aa0000;\n"
+                },
+                {
+                    "date": 1742939717588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1388,9 +1388,9 @@\n     background-color: #fff;\n     border-color: #aa0000;\n     outline: none;\n     outline: 0;\n-    box-shadow: 0 0 0 0.2rem rgba(170,0,0, 0.25);\n+    box-shadow: 0 0 0 0.3rem rgba(170,0,0, 0.75);\n     \n }\n .form-control::placeholder {\n     color: #868e96;\n"
+                },
+                {
+                    "date": 1742939738368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1388,9 +1388,9 @@\n     background-color: #fff;\n     border-color: #aa0000;\n     outline: none;\n     outline: 0;\n-    box-shadow: 0 0 0 0.3rem rgba(170,0,0, 0.75);\n+    box-shadow: 0 0 0 0.3rem rgba(170,0,0, 0.25);\n     \n }\n .form-control::placeholder {\n     color: #868e96;\n"
+                },
+                {
+                    "date": 1742939782391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1379,14 +1379,14 @@\n }\n \n .form-control:hover{\n     border-color: #aa0000;\n+    background-color: #f1f1f1;\n     outline: none;\n     outline: 0;\n }\n .form-control:focus {\n     color: #495057;\n-    background-color: #fff;\n     border-color: #aa0000;\n     outline: none;\n     outline: 0;\n     box-shadow: 0 0 0 0.3rem rgba(170,0,0, 0.25);\n"
+                },
+                {
+                    "date": 1742939801926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1379,9 +1379,9 @@\n }\n \n .form-control:hover{\n     border-color: #aa0000;\n-    background-color: #f1f1f1;\n+    background-color: #f9f9f9;\n     outline: none;\n     outline: 0;\n }\n .form-control:focus {\n"
+                },
+                {
+                    "date": 1742939989386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1379,9 +1379,9 @@\n }\n \n .form-control:hover{\n     border-color: #aa0000;\n-    background-color: #f9f9f9;\n+    background-color: #fefefe;\n     outline: none;\n     outline: 0;\n }\n .form-control:focus {\n"
+                },
+                {
+                    "date": 1742940026091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1380,8 +1380,9 @@\n \n .form-control:hover{\n     border-color: #aa0000;\n     background-color: #fefefe;\n+    font-color: #000000;\n     outline: none;\n     outline: 0;\n }\n .form-control:focus {\n"
+                },
+                {
+                    "date": 1743107160491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3655,23 +3655,23 @@\n .progress {\n     display: flex;\n     overflow: hidden;\n     font-size: 0.75rem;\n-    line-height: 1rem;\n+    line-height: 2rem;\n     text-align: center;\n-    background-color: #e9ecef;\n+    background-color: transparent;\n     border-radius: 0.25rem;\n }\n .progress-bar {\n-    height: 1rem;\n-    line-height: 1rem;\n+    height: 2rem;\n+    line-height: 2rem;\n     color: #fff;\n     background-color: #aa0000;\n     transition: width 0.6s ease;\n }\n .progress-bar-striped {\n     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);\n-    background-size: 1rem 1rem;\n+    background-size: 2rem 2rem;\n }\n .progress-bar-animated {\n     animation: progress-bar-stripes 1s linear infinite;\n }\n"
+                },
+                {
+                    "date": 1743174398072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2210,8 +2210,16 @@\n     font-size: 1.25rem;\n     line-height: 1.5;\n     border-radius: 0.3rem;\n }\n+\n+.btn-xl,\n+.btn-group-xl > .btn {\n+    padding: 1rem 1.5rem;\n+    font-size: 1.60rem;\n+    line-height: 2;\n+    border-radius: 0.5rem;\n+}\n .btn-sm,\n .btn-group-sm > .btn {\n     padding: 0.25rem 0.5rem;\n     font-size: 0.975rem;\n@@ -2437,8 +2445,14 @@\n .btn-group-lg > .btn + .dropdown-toggle-split {\n     padding-right: 0.75rem;\n     padding-left: 0.75rem;\n }\n+\n+.btn-xl + .dropdown-toggle-split,\n+.btn-group-xl > .btn + .dropdown-toggle-split {\n+    padding-right: 1.2rem;\n+    padding-left: 1.2rem;\n+}\n .btn-group-vertical {\n     display: inline-flex;\n     flex-direction: column;\n     align-items: flex-start;\n"
+                },
+                {
+                    "date": 1743174559404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2213,10 +2213,10 @@\n }\n \n .btn-xl,\n .btn-group-xl > .btn {\n-    padding: 1rem 1.5rem;\n-    font-size: 1.60rem;\n+    padding: 0.45rem 1.1rem;\n+    font-size: 1.40rem;\n     line-height: 2;\n     border-radius: 0.5rem;\n }\n .btn-sm,\n"
                 }
             ],
             "date": 1742486217998,

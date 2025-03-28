@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Site/.htaccess",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1743090384352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1743090384352,
+            "name": "Commit-0",
+            "content": "# Permite requisições de qualquer origem CORS\r\nHeader set Access-Control-Allow-Origin \"*\"\r\nHeader set Access-Control-Allow-Methods \"GET, POST, PUT, DELETE, OPTIONS\"\r\nHeader set Access-Control-Allow-Headers \"Content-Type, Authorization\""
+        }
+    ]
+}
